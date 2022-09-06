@@ -47,4 +47,23 @@ void main(){
   var k = 7;
   var l = (j<k)&&(k>7);
   print(l);
+  
+    //Even odd programes
+  
+ int num1 = 3;
+ int num2 = 6;
+ 
+ if(num1 % 2 == 0){
+   print("num1 is even");
+ }
+  else{
+    print("num1 is odd");
+  }
+  if(num2 % 2 == 0){
+   print("num2 is even");
+ }
+  else{
+    print("num2 is odd");
+  }
+  
   }
