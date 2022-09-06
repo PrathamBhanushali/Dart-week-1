@@ -12,4 +12,15 @@ void main(){
   print(age);
   print(height);
   
+  //2. string interpolation
+  
+  double temperature=20;
+  int value = 2;
+  String pizza = 'pizza';
+  String pasta = 'pasta';
+  
+  print("The temperature is $temperature""C");
+  print("$value plus $value makes ${value + value}");
+  print("I like $pizza and $pasta");
+  
 }
