@@ -48,4 +48,9 @@ void main(){
   String title = 'dart course';
   print("${title[0].toUpperCase()}""${title.substring(1)}");
   
+  //6. substring
+  
+  String title = "Helloworld";
+  print(title.substring(3,7));
+  
 }
