@@ -23,4 +23,12 @@ void main(){
   print("$value plus $value makes ${value + value}");
   print("I like $pizza and $pasta");
   
+  //4. Lowercase and uppercase
+  
+ String title = "Dart course";
+   
+   print(title);
+  print(title.toUpperCase());
+  print(title.toLowerCase());
+  
 }
