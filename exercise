@@ -43,4 +43,9 @@ void main(){
   print(title.toUpperCase());
   print(title.toLowerCase());
   
+  //5. first char capitalized
+  
+  String title = 'dart course';
+  print("${title[0].toUpperCase()}""${title.substring(1)}");
+  
 }
