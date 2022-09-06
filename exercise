@@ -23,6 +23,18 @@ void main(){
   print("$value plus $value makes ${value + value}");
   print("I like $pizza and $pasta");
   
+  //3. palindrome
+  
+  String name="dad";
+  String name1=name.split("").reversed.join("");
+  
+  if(name == name1){
+    print("The string is palindrome");
+  }
+  else{
+    print("The string is not palindrome");
+  }
+  
   //4. Lowercase and uppercase
   
  String title = "Dart course";
