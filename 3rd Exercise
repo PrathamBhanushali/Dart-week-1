@@ -55,4 +55,20 @@ const Map<String,double> pizzaPrices={
  }
   print('Total: \$$total');
   
+  //4. shopping list
+  
+  const bananas = 5;
+  const apples = 6;
+  const grains = {
+    'pasta':'500g',
+    'rice':'1kg'
+  };
+  const addGrains = true;
+  var shoppingList = {
+    if(bananas > 0) 'bananas':bananas,
+    if(apples > 0) 'apples':apples,
+    if(addGrains) ...grains,
+  };
+  print(shoppingList);
+  
 }
