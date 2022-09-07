@@ -17,5 +17,13 @@ void main(){
   var c = a.difference(b);
   var d = b.difference(a);
   print(c.union(d));
+  var e = c.union(d);
+  List<int>suming=e.toList();
+  
+  int sum=0;
+  for(int i=0;i<suming.length;i++){
+    sum=sum+suming[i];
+  }
+  print(sum);
   
 }
