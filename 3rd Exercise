@@ -26,7 +26,7 @@ void main(){
   }
   print(sum);
   
-    //3. Pizza ordering has one error
+  //3. Pizza ordering
   
 const Map<String,double> pizzaPrices={
   
@@ -37,6 +37,7 @@ const Map<String,double> pizzaPrices={
 };
   
   const List<String>order=['margerita','pepperoni','cheseCorn'];
+  var total= 0.0;
   
  for(int i=0;i<order.length;i++){
    var available = pizzaPrices.containsKey(order[i]);
@@ -46,10 +47,12 @@ const Map<String,double> pizzaPrices={
      print("${order[i]} is not available");
    }
    else{
-     double sum = 0; 
-     sum = sum + (pizzaPrices[order[i]]);
-     print(pizzaPrices[order[i]]);
+     final price = pizzaPrices[order[i]];
+     if(price != null){
+       total += price;
+     }
    }
  }
+  print('Total: \$$total');
   
 }
