@@ -9,4 +9,13 @@ void main(){
     sum=sum+integers[i];
   }
   print(sum);
+  
+  //2. sets
+  
+  const a =<int>{1,3};
+  const b =<int>{3,5};
+  var c = a.difference(b);
+  var d = b.difference(a);
+  print(c.union(d));
+  
 }
