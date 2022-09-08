@@ -36,3 +36,38 @@ class Restaurant{
     return ratings.reduce((value, element) => value + element) / ratings.length;
   }
 }
+
+//3. Area and perimeter
+abstract class Shape{
+  double get area;
+  double get perimeter;
+  void printValues(){
+    print("area = $area and perimeter = $perimeter");
+  }
+}
+class Square extends Shape{
+  Square(this.side);
+  final double side;
+  
+  double get area => side*side;
+  double get perimeter => 4*side;
+}
+
+class Circle extends Shape{
+  Circle(this.radius);
+  final double radius;
+  
+  double get area => 3.14*radius*radius;
+  double get perimeter => 2*3.14*radius;
+}
+
+void main(){
+  
+  final shapes = [
+    Square(3),
+    Circle(4),
+  ];
+  
+  shapes.forEach((shape) => shape.printValues());
+  
+}
